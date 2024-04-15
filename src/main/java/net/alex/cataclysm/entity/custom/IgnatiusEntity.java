@@ -39,6 +39,6 @@ public class IgnatiusEntity extends Animal {
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
-        return ;
+        return null;
     }
 }
