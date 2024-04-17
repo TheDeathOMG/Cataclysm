@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 
-public class IgnatiusRenderer extends MobRenderer<IgnatiusEntity, IgnatiusModel<IgnatiusEntity>> {
+public class IgnatiusRenderer extends MobRenderer<IgnatiusEntity, IgnatiusModel<IgnatiusEntity>>     {
     public IgnatiusRenderer(EntityRendererProvider.Context pContext) {
         super(pContext, new IgnatiusModel<>(pContext.bakeLayer(ModModelLayers.IGNATIUS_LAYER)), 2f);
     }
@@ -21,6 +21,7 @@ public class IgnatiusRenderer extends MobRenderer<IgnatiusEntity, IgnatiusModel<
 
     @Override
     public void render(IgnatiusEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pMatrixStack, MultiBufferSource pBuffer, int pPackedLight) {
+        pMatrixStack.scale(4f, 4f, 4f);
         super.render(pEntity, pEntityYaw, pPartialTicks, pMatrixStack, pBuffer, pPackedLight);
     }
 }
