@@ -14,7 +14,7 @@ public class ModEntities {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Cataclysm.MOD_ID);
 
     public static final RegistryObject<EntityType<IgnatiusEntity>> IGNATIUS =
-            ENTITY_TYPES.register("ignatius", () -> EntityType.Builder.of(IgnatiusEntity::new, MobCategory.CREATURE).sized(10f, 10f).build("ignatius"));
+            ENTITY_TYPES.register("ignatius", () -> EntityType.Builder.of(IgnatiusEntity::new, MobCategory.MONSTER).sized(10f, 10f).build("ignatius"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

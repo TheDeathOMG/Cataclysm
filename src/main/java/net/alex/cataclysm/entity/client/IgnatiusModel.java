@@ -140,7 +140,6 @@ public class IgnatiusModel<T extends Entity> extends HierarchicalModel<T> {
 
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		tatw
 	}
 
 	@Override

@@ -2,6 +2,8 @@ package net.alex.cataclysm;
 
 import com.mojang.logging.LogUtils;
 import net.alex.cataclysm.entity.ModEntities;
+import net.alex.cataclysm.entity.client.IgnatiusRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -57,6 +59,7 @@ public class Cataclysm
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            EntityRenderers.register(ModEntities.IGNATIUS.get(), IgnatiusRenderer::new);
         }
     }
 }
